@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <!-- Meta Tags Esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>¡Gracias por tu mensaje! | MILÚ Eventos</title>
+    <meta name="description" content="Gracias por contactar a MILÚ Eventos. Nos pondremos en contacto contigo pronto para hacer realidad tu evento.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    
+    <style>
+        .gracias-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FF85C8 0%, #FFA726 25%, #4DD4FF 75%, #B8D548 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gracias-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 60px 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            position: relative;
+            z-index: 2;
+            animation: slideUp 0.8s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .gracias-icon {
+            font-size: 120px;
+            margin-bottom: 30px;
+            animation: bounce 1s ease infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        .gracias-title {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #FF85C8 0%, #FFA726 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .gracias-text {
+            font-size: 1.2rem;
+            color: #6C757D;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .gracias-info {
+            background: #F8F9FA;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+            color: #343A40;
+            font-weight: 500;
+        }
+        
+        .info-item i {
+            color: #FF85C8;
+            font-size: 1.3rem;
+        }
+        
+        .countdown {
+            font-size: 1rem;
+            color: #6C757D;
+            margin-top: 20px;
+        }
+        
+        .floating-emoji {
+            position: absolute;
+            font-size: 3rem;
+            animation: float 3s ease-in-out infinite;
+            opacity: 0.6;
+        }
+        
+        .emoji-1 { top: 10%; left: 10%; animation-delay: 0s; }
+        .emoji-2 { top: 20%; right: 15%; animation-delay: 0.5s; }
+        .emoji-3 { bottom: 15%; left: 15%; animation-delay: 1s; }
+        .emoji-4 { bottom: 20%; right: 10%; animation-delay: 1.5s; }
+        .emoji-5 { top: 50%; left: 5%; animation-delay: 2s; }
+        .emoji-6 { top: 60%; right: 8%; animation-delay: 2.5s; }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(10deg);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gracias-content {
+                padding: 40px 30px;
+                margin: 20px;
+            }
+            
+            .gracias-title {
+                font-size: 2rem;
+            }
+            
+            .gracias-icon {
+                font-size: 80px;
+            }
+            
+            .floating-emoji {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section class="gracias-section">
+        <!-- Floating Emojis -->
+        <div class="floating-emoji emoji-1">🎈</div>
+        <div class="floating-emoji emoji-2">🎉</div>
+        <div class="floating-emoji emoji-3">🎨</div>
+        <div class="floating-emoji emoji-4">⭐</div>
+        <div class="floating-emoji emoji-5">🎊</div>
+        <div class="floating-emoji emoji-6">🎁</div>
+        
+        <div class="gracias-content">
+            <div class="gracias-icon">🥳</div>
+            
+            <h1 class="gracias-title">¡Mensaje Recibido!</h1>
+            
+            <p class="gracias-text">
+                <strong>¡Gracias por contactar a MILÚ Eventos!</strong><br>
+                Hemos recibido tu mensaje y nuestro equipo se pondrá en contacto contigo 
+                muy pronto para ayudarte a crear el evento perfecto.
+            </p>
+            
+            <div class="gracias-info">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Responderemos en menos de 24 horas</span>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>También puedes llamarnos: +52 668 130 4226</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Revisa tu email (incluyendo spam)</span>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                <a href="index.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-home me-2"></i>Volver al Inicio
+                </a>
+                <a href="https://wa.me/526681304226?text=Hola%20MILÚ,%20envié%20un%20formulario" 
+                   class="btn btn-outline-primary btn-lg" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp me-2"></i>Chatear por WhatsApp
+                </a>
+            </div>
+            
+            <div class="countdown mt-4">
+                <small>Serás redirigido al inicio en <span id="timer">10</span> segundos</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Countdown y redirección automática
+        let timeLeft = 10;
+        const timerElement = document.getElementById('timer');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+        
+        // Google Analytics Event
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                'page_title': 'Gracias - Formulario Enviado',
+                'page_location': window.location.href
+            });
+        }
+        
+        // Google Tag Manager Event
+        if (typeof dataLayer !== 'undefined') {
+            dataLayer.push({
+                'event': 'thank_you_page_view',
+                'conversion': true
+            });
+        }
+    </script>
+</body>
+</html>
